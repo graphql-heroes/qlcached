@@ -1,6 +1,6 @@
 {
     "name": "idb-localstorage",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "IndexedDB storage",
     "main": "./dist/idb-localstorage-cjs.js",
     "module": "./dist/idb-localstorage.mjs",
