@@ -1,4 +1,4 @@
-# Apollo QLCached
+# QLCached
 
 ![](https://i.imgur.com/jsL955L.png)
 
