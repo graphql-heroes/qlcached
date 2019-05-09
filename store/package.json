@@ -4,7 +4,7 @@
     "description": "IndexedDB storage",
     "main": "./dist/idb-localstorage-cjs.js",
     "module": "./dist/idb-localstorage.mjs",
-    "types": "./dist/idb-localstorage.d.ts",
+    "types": "./dist/store.d.ts",
     "scripts": {
         "build": "del dist && rollup -c && npm run compress-iife && npm run create-compat && npm run create-cjs-compat && npm run compress-amd",
         "compress-iife": "uglifyjs --compress --mangle -o dist/idb-localstorage-iife.min.js dist/idb-localstorage-iife.js",
