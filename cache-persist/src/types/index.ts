@@ -8,11 +8,11 @@ export type TriggerUninstallFunction = () => void;
 
 export type TriggerFunction = (persist: () => void) => TriggerUninstallFunction;
 
-export type PersistedData<T> = T | string | null;
+export type PersistedData<T> = T | string | null | Object;
 
 export interface PersistentStorage<T> {
   getItem: (key: string) => Promise<T> | T;
-  setItem: (key: string, data: T) => Promise<void> | void;
+  setItem: (key: string, data: T) => Promise<void | T> | void | T;
   removeItem: (key: string) => Promise<void> | void;
 }
 
